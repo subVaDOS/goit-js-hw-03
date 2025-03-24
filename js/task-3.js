@@ -17,24 +17,11 @@
 // console.log(filterArray([12, 24, 8, 41, 76], 38)); // [41, 76]
 // console.log(filterArray([12, 24, 8, 41, 76], 20)); // [24, 41, 76]
 
-const apartment = {
-  imgUrl: 'https://via.placeholder.com/640x480',
-  descr: 'Spacious apartment in the city center',
-  rating: 4,
-  price: 2153,
-  tags: ['premium', 'promoted', 'top'],
-  owner: {
-    name: 'Henry',
-    phone: '982-126-1588',
-    email: 'henry.carter@aptmail.com',
-  },
-};
+const name = 'Repair Droid';
+const price = 2500;
+const image = 'https://via.placeholder.com/640x480';
+const tags = ['on sale', 'trending', 'best buy'];
 
-// Оновлення значень властивостей
-apartment.price = 5000;
-apartment.rating = 4.7;
-apartment.owner.name = 'Henry Sibola';
-apartment.tags.push('trusted'); // Додаємо новий тег у кінець масиву
+const product = { name, price, image, tags };
 
-// Перевіряємо результат
-console.log(apartment);
+console.log(product);
