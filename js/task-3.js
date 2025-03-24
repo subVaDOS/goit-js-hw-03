@@ -89,3 +89,21 @@ for (const color of colors) {
 
 console.log(hexColors); // ["#f44336", "#2196f3", "#4caf50", "#ffeb3b"]
 console.log(rgbColors); // ["244,67,54", "33,150,243", "76,175,80", "255,235,59"]
+
+const books = [
+  { title: 'The Last Kingdom', author: 'Bernard Cornwell' },
+  { title: 'Beside Still Waters', author: 'Robert Sheckley' },
+  { title: 'The Dream of a Ridiculous Man', author: 'Fyodor Dostoevsky' },
+];
+
+const authorToSearchFor = 'Robert Sheckley';
+
+for (const book of books) {
+  if (book.author === authorToSearchFor) {
+    console.log(book);
+    console.log(book.title);
+    console.log(book.rating);
+  }
+}
+
+// У прикладі вище цикл for перебирає об'єкти в масиві, доки не знайде той, у якого порівняння значення властивості author і authorToSearchFor поверне true. Щойно об’єкт з необхідним автором знайдено, виконається тіло if, де ми вже можемо працювати зі знайденим об'єктом.
